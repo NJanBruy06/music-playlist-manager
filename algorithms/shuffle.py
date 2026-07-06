@@ -78,10 +78,8 @@ class Shuffle:
             song_list[i], song_list[j] = song_list[j], song_list[i]
 
         return song_list
-
-    # ==========================================================
+        
     # Shuffle Playlist
-    # ==========================================================
     @staticmethod
     def shuffle_playlist(head):
 
