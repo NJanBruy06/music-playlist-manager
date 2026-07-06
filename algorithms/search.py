@@ -27,10 +27,8 @@ class Search:
             current = current.next
 
         return result
-
-    # ==========================================================
+        
     # Tìm kiếm theo tên ca sĩ
-    # ==========================================================
     @staticmethod
     def search_by_artist(head, keyword):
 
