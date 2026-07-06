@@ -1,5 +1,6 @@
 import sys
 import os
+
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from models.song import Song
@@ -38,8 +39,8 @@ def load_sample_data(player: Player) -> None:
 
 def main() -> None:
     playlist_info = Playlist(
-        name="🎵 PTTKGT Playlist — Nhóm 5",
-        description="Playlist demo cho bài tập lớn môn Phân Tích Thiết Kế Giải Thuật"
+        name="Danh sách phát nhạc mẫu",
+        description="Danh sách phát nhạc mẫu được tạo ra để thử nghiệm ứng dụng MusicApp",
     )
     player = Player(playlist_info)
     load_sample_data(player)
