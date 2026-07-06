@@ -1,6 +1,6 @@
 # 🎵 Music Playlist Manager
 
-**Dự án nhóm 5** &nbsp;|&nbsp; **Môn:** Phân Tích Thiết Kế Giải Thuật &nbsp;|&nbsp; **Python:** 3.10+
+**Dự án nhóm 4** &nbsp;|&nbsp; **Môn:** Phân Tích Thiết Kế Giải Thuật &nbsp;|&nbsp; **Python:** 3.10+
 
 ---
 
