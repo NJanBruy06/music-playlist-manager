@@ -23,7 +23,7 @@ class Shuffle:
         nodes = []
         current = head
         while current is not None:
-            nodes.append(current)  
+            nodes.append(current)
             current = current.next
         return nodes
 
@@ -35,10 +35,18 @@ class Shuffle:
             node_list[i], node_list[j] = node_list[j], node_list[i]
         return node_list
 
+    @staticmethod
+    def is_shuffled(before, after):
+        if len(before) != len(after):
+            return False
+        for i in range(len(before)):
+            if before[i] != after[i]:
+                return True
+        return False
+
 def fisher_yates_shuffle(dll):
     if Shuffle.is_empty(dll.head) or not Shuffle.can_shuffle(dll.head):
         return
-
     nodes = Shuffle.linked_list_to_list(dll.head)
     Shuffle.fisher_yates_shuffle(nodes)
     dll.from_list(nodes)
