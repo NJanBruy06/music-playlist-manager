@@ -12,7 +12,7 @@
 | 🔍 Tìm kiếm | Tìm bài hát theo tên hoặc ca sĩ (Linear Search) |
 | 🔄 Sắp xếp | Sắp xếp playlist theo tên, ca sĩ hoặc thời lượng (Merge Sort, Insertion Sort) |
 | 🔀 Trộn & Lặp lại | Hỗ trợ phát ngẫu nhiên (Shuffle) và vòng lặp (Repeat 1 / Repeat All) |
-| ⏭️ Hàng đợi & Lịch sử | Chuyển bài (Next), quay lại bài trước (Back) và quản lý Up Next |
+| ⏭️ Điều hướng | Chuyển bài (Next) và quay lại bài trước (Previous) dễ dàng qua Linked List |
 
 ---
 
@@ -35,7 +35,7 @@ python main.py
 music-playlist-manager/
 ├── main.py              ← Điểm khởi động ứng dụng
 ├── models/              ← Định nghĩa đối tượng (Song, Playlist)
-├── data_structures/     ← Các CTDL nền tảng (Linked List, Stack, Queue)
+├── data_structures/     ← Các CTDL nền tảng (Doubly Linked List)
 ├── algorithms/          ← Các thuật toán (Search, Sort, Shuffle)
 └── ui/                  ← Giao diện người dùng (Tkinter GUI)
 ```
@@ -46,8 +46,6 @@ music-playlist-manager/
 
 ### 1. Cấu trúc dữ liệu
 - **Doubly Linked List:** Lưu trữ danh sách bài hát chính, giúp chèn/xóa phần tử ở độ phức tạp $O(1)$ khi biết vị trí và dễ dàng điều hướng Next/Previous.
-- **Stack (Ngăn xếp - LIFO):** Quản lý Lịch sử phát nhạc (History). Hỗ trợ tính năng quay lại bài trước (Back).
-- **Queue (Hàng đợi - FIFO):** Quản lý danh sách phát tiếp theo (Up Next Queue) được người dùng chỉ định ưu tiên.
 
 ### 2. Thuật toán cốt lõi
 - **Linear Search:** $O(n)$ - Duyệt tìm kiếm bài hát theo từ khóa.
